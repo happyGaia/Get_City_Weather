@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Exam</title>
+	<link type="text/css" rel="stylesheet" href="css/normalized.css?20150804">
+	<link type="text/css" rel="stylesheet" href="css/indexStyle.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+	<![endif]-->
+	<!--[if lte IE 8]>
+    <script src="js/excanvas.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/indexController.js"></script>
+    <!-- note: for ie7,8..., script type='text/javascript' must be write, if no, there have issue.-->
+</head>
+<body>
+	<div class="phoneOnly clearfix display-none">
+		<span class="phoneMenu" onclick="showMenu();">☰</span>
+	</div>
+	<div id="sidebar" class="menu">
+		<ul class="btns">
+			<li id="btn-analysis">Data Analysis</li>
+			<li id="btn-weather">Today's Weather</li>
+		</ul>
+	</div>
+	<div id="content" class="clearfix">
+		
+	</div>
+</body>
+</html>

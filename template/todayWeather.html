@@ -1,0 +1,19 @@
+<div class="wrap">
+	<h3>Today's Weather</h3>
+	<div class="wrap-weather">
+		<div id="message" class="display-none"></div>
+		<div class="weather-search clearfix">
+			<span>City：<input type="text" id="city"></span>
+			<span>Country：<input type="text" id="country"></span>
+			<ul class="btns clearfix">
+				<li onclick="getData();">Search</li>
+			</ul>
+		</div>
+		<span class="loading display-none"></span>
+		<div id="weather-result" class="display-none">
+			<div id="wrap-weather"></div>
+			<div class="lh20">Temperature：<span id="weather-tmep"></span></div>
+			<div class="lh20 clearfix">Humidity：<span id="weather-humidity"></span></div>
+		</div>
+	</div>
+</div>

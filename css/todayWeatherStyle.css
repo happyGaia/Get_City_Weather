@@ -1,0 +1,110 @@
+/* theme */
+.wrap-weather{
+	margin: 10px 5px;
+	font-size: 12px;
+}
+
+.wrap-weather > div{
+	width: 100%;
+}
+
+.weather-search .btns{
+	width: 20%;
+	text-align: center;
+	
+}
+
+.weather-search .btns >li:hover{
+	border: 1px solid #2a9fcd;
+	background-color: #E7EBFF;
+	font-weight: bold;
+}
+
+.weather-search li{
+	padding: 0 10px;
+	background-color: #F0F0F0;
+	line-height: 24px;
+	height: 24px;
+}
+
+.weather-search > span, .weather-search .btns{
+	float: left;
+	margin-right: 10px;	
+}
+
+.weather-search input[type='text']{
+	display: inline-block;
+	height: 20px;	
+}
+
+.mb10, .wrap-weather>div{
+	margin-bottom: 10px;
+}
+
+.icon{
+	width: 66px;
+	max-width: 66px;
+	display: block;
+	background-color: #E7EBFF;
+	background: url("../img/icons.png");
+}
+
+.icon-rain{	
+	background-position: -285px -375px;
+}
+
+.icon-cloud{	
+	background-position: -66px -375px;
+}
+
+.icon-clear{	
+	background-position: -69px -13px;
+}
+
+.icon-na{	
+	background-position: -140px -517px;
+}
+
+.infoBox-pic{
+	background-color: #ECF5FF;
+}
+
+/* wearther info desc wrap */
+.infoBox-pic, .infoBox-desc{
+	float: left;
+}
+
+.infoBox-desc, .icon{
+	height: 66px;
+}
+
+.infoBox-desc{
+	width: 40%;
+	font-size: 14px;
+	padding: 20px 0;
+}
+
+.infoBox-desc > .main{
+	font-size: 34px;
+}
+
+.infoBox-desc i{
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.lh20{
+	line-height: 20px;
+	height: 20px;
+	margin: 10px auto;
+	width: 100%;
+	display: block;
+}
+
+@media screen and (max-width:768px){
+	.weather-search > span, .weather-search .btns{
+		float: none;
+		margin-bottom: 6px;
+		display: block;
+	}
+}

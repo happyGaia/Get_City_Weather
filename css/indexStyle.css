@@ -1,0 +1,163 @@
+/* common */
+.clearfix:after{
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix{   /* for IE (8) clearfix to fit auto height */
+	overflow: hidden;
+    zoom:1;
+}
+
+/*.clearfix:after{
+	content:"";
+    display: table;
+    clear:both;
+}*/
+
+/*** layout ***/
+body{
+	width: 100%;
+}
+
+#sidebar{
+	width: 20%;
+	/*border: 1px solid blue;*/
+	float: left;
+}
+
+#content{
+	width: 79%;
+	float: left;
+	/*border: 1px solid red;*/
+}
+
+.wrap{
+	width: 97%;
+	margin: 10px auto;
+}
+
+.wrap h3{
+	width: 100%;
+	font-size: 16px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #000000;
+	font-weight: normal;
+	
+}
+
+
+
+/*** Module/ UI ***/
+/* button module*/
+.btns > li + li{
+	border-top: none;
+}
+
+.btns > li{
+	padding: 5px 5px 5px 20px;
+	font-size: 12px;
+	display: block;	
+	cursor: pointer;
+	border: 1px solid #c0c0c0;
+}
+
+.btns-h > li{
+	float: left;
+}
+/* error message module*/
+.error-msg{
+	border: 1px solid #FF0000;
+	background-color: #FFCCCC;
+	width: 70%;
+	height: 20px;
+	line-height: 20px;
+	padding: 2px 5px;
+}
+/* pic + desc module */
+.infoBox{
+	padding: 10px 0;
+	/*min-height: 106px;  ie8 must be set height */
+}
+
+.infoBox .infoBox-pic{
+	margin: 0 20px;
+	padding: 3px;
+	/*width: 35%;*/
+	display: inline-block;
+	max-width: 35%;
+	padding: 20px;
+	
+}
+
+.infoBox .infoBox-desc{
+	font-size: 12px;
+	
+}
+/* loading UI */
+.loading{
+	width: 100%;
+	background: url('../img/loading.gif') no-repeat;
+	margin: 15% auto 0;
+	display: block;
+	width: 100px;
+	height: 100px;
+	max-width: 100px;
+}
+
+.display-none{
+	display: none;
+}
+
+.display-block{
+	display: block;
+}
+
+
+/*** State ***/
+.btns-click, #sidebar .btns-click{
+	border: 1px solid #2a9fcd;
+	background-color: #E7EBFF;
+	font-weight: bold;
+}
+
+/*** Theme (index.html) ***/
+#sidebar .btns{
+	margin: 3px;
+}
+
+/* media query */
+@media screen and (max-width:768px){
+	.menu{
+		display: none;
+	}
+	#sidebar, #content {
+	    width: 100%;
+	    float: none;
+	}
+
+	.display-block{
+		display: block;
+	}
+	.phoneOnly{
+		width: 100%;
+		display: block;
+	}
+	.phoneMenu {
+	    border: 1px solid #DDD;
+	    display: inline-block;
+	    border-radius: 4px;
+	    padding: 6px 12px;
+	    font-size: 20px;
+	    float: right;
+	    margin-top: 3px;
+		margin-right: 3px;
+	}
+
+	.phoneMenu-click ,.phoneMenu:hover{
+		background-color: #F0F0F0;
+	}
+}
